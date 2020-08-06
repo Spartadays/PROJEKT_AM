@@ -1,0 +1,39 @@
+﻿<Window x:Class="AirQualityStationViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirQualityStationViewer"
+        mc:Ignorable="d"
+        Title="AirQualityStation_IoT" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="button_show_epaper" Content="Show data from AirQualityStation on e-paper" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="250" Height="50" Click="Button_show_epaper_Click"/>
+        <Button x:Name="button_clear_epaper" Content="Clear e-paper" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="Clear_epaper_Click"/>
+        <Button x:Name="button_get_distance" Content="Get distance" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="82" Height="50" Click="Button_get_distance_Click"/>
+        <TextBlock x:Name="distance" HorizontalAlignment="Left" Margin="97,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="163"/>
+        <Button x:Name="button_send_epaper" Content="Send text to e-paper" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Width="123" Height="50" Click="Button_send_epaper_Click"/>
+        <TextBox x:Name="textbox_epaper" HorizontalAlignment="Left" Height="50" Margin="138,175,0,0" TextWrapping="Wrap" Text="Write here" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="button_show_airqualitystation" Content="Display data from AirQualityStation" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Width="203" Height="49" Click="Button_show_airqualitystation_Click"/>
+        <Label x:Name="l1" Content="" HorizontalAlignment="Left" Margin="422,42,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="l2" Content="" HorizontalAlignment="Left" Margin="422,73,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="l3" Content="" HorizontalAlignment="Left" Margin="422,104,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l4" Content="" HorizontalAlignment="Left" Margin="422,135,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l5" Content="" HorizontalAlignment="Left" Margin="422,166,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l6" Content="" HorizontalAlignment="Left" Margin="422,197,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l7" Content="" HorizontalAlignment="Left" Margin="422,228,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l8" Content="" HorizontalAlignment="Left" Margin="422,259,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l9" Content="" HorizontalAlignment="Left" Margin="422,290,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l1_C" Content="" HorizontalAlignment="Left" Margin="606,42,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="l2_C" Content="" HorizontalAlignment="Left" Margin="606,73,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="l3_C" Content="" HorizontalAlignment="Left" Margin="606,104,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l4_C" Content="" HorizontalAlignment="Left" Margin="606,135,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l5_C" Content="" HorizontalAlignment="Left" Margin="606,166,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l6_C" Content="" HorizontalAlignment="Left" Margin="606,197,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l7_C" Content="" HorizontalAlignment="Left" Margin="606,228,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l8_C" Content="" HorizontalAlignment="Left" Margin="606,259,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Label x:Name="l9_C" Content="" HorizontalAlignment="Left" Margin="606,290,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.498,0.429"/>
+        <Button x:Name="button_ip" Content="Change RPi default IP" HorizontalAlignment="Left" Margin="10,384,0,0" VerticalAlignment="Top" Width="123" Height="25" Click="Button_ip_Click"/>
+        <TextBox x:Name="textbox_ip" HorizontalAlignment="Left" Height="25" Margin="138,384,0,0" TextWrapping="Wrap" Text="192.168.1.68" VerticalAlignment="Top" Width="123"/>
+
+    </Grid>
+</Window>

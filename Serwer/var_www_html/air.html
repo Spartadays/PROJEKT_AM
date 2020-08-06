@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/skrypt.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">AirQualityStation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="epaper.html">E-Paper Display</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="air.html">Air Quality<span class="sr-only">(current)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dokument.html">Distance Detection</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button onclick="showData()" id="b_show_data" type="button" class="btn btn-info">SHOW DATA</button>
+            </div>
+            <div class="col">
+                <button onclick="showDataEpaper()" id="b_show_data_epaper" type="button" class="btn btn-info">SHOW DATA
+                    ON E-PAPER</button>
+            </div>
+        </div>
+    </div>
+
+    <h4 id="station_name"><span class="badge badge-secondary"></span></h4>
+    <h4 id="station_id"><span class="badge badge-secondary"></span></h4>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Measurement:</th>
+                    <th>Value:</th>
+                    <th>Unit:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="t1_n"></td>
+                    <td id="t1_v"></td>
+                    <td id="t1_u"></td>
+                </tr>
+                <tr>
+                    <td id="t2_n"></td>
+                    <td id="t2_v"></td>
+                    <td id="t2_u"></td>
+                </tr>
+                <tr>
+                    <td id="t3_n"></td>
+                    <td id="t3_v"></td>
+                    <td id="t3_u"></td>
+                </tr>
+                <tr>
+                    <td id="t4_n"></td>
+                    <td id="t4_v"></td>
+                    <td id="t4_u"></td>
+                </tr>
+                <tr>
+                    <td id="t5_n"></td>
+                    <td id="t5_v"></td>
+                    <td id="t5_u"></td>
+                </tr>
+                <tr>
+                    <td id="t6_n"></td>
+                    <td id="t6_v"></td>
+                    <td id="t6_u"></td>
+                </tr>
+                <tr>
+                    <td id="t7_n"></td>
+                    <td id="t7_v"></td>
+                    <td id="t7_u"></td>
+                </tr>
+                <tr>
+                    <td id="t8_n"></td>
+                    <td id="t8_v"></td>
+                    <td id="t8_u"></td>
+                </tr>
+                <tr>
+                    <td id="t9_n"></td>
+                    <td id="t9_v"></td>
+                    <td id="t9_u"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
